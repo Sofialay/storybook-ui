@@ -1,12 +1,15 @@
 import React, { Children } from 'react'
 import { WrapCenterPosition } from './WrapCenter.styles'
 
-export const WrapCenter = () => {
+export const WrapCenter = ({ width, height }) => {
 
     return (
-        <WrapCenterPosition>
+        <WrapCenterPosition 
+            width={width} 
+            height={height}
+        >
             {Children}
         </WrapCenterPosition>
     )
-    
+
 }

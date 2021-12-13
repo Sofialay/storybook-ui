@@ -9,6 +9,9 @@ import styled from 'styled-components'
 - a fixed size (defined width and height properties)
 - hungry margins (margin: auto) */
 
+// It's especially useful for prominent bits of UI, 
+// things like modals or drawers or dialog boxes.
+
 export const WrapCenterPosition = styled.div`
     position: absolute;
     left: 0;
@@ -17,6 +20,8 @@ export const WrapCenterPosition = styled.div`
     bottom: 0;
     margin: auto;
     border: 1px dotted palevioletred;
+    width: ${width => width && width};
+    height: ${height => height && height};
 `
 
 
