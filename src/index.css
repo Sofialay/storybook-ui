@@ -149,5 +149,4 @@ select {
 /* first child has no margin top and last child has no margin bottom */
 .flow > *:not(:first-child) {
 	margin-top: 1rem;
-	/* outline: 1px solid red; */
 }
