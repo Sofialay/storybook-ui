@@ -1,0 +1,52 @@
+<Meta title="Docs/Theme" />
+
+## Theme 🎨
+<style>{`
+    .title {
+        font-size: 1.3rem;
+    }
+
+    .card-list {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .card-list .card {
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.05);
+        height: 100px;
+        width: 150px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FFF;
+        font-weight: bold;
+    }
+
+    .card-list .card.primary {
+        background: #7900FF;
+    }
+
+    .card-list .card.secondary {
+        background: #548CFF;
+    }
+
+    .card-list .card.tertiary {
+        background: #93FFD8;
+    }
+`}
+</style>
+<div className="card-list">
+    <div className='title'>Colors</div>
+    <div className='card primary'>
+        #7900FF
+    </div>
+    <div className='card secondary'>
+        #548CFF
+    </div>
+    <div className='card tertiary'>
+        #93FFD8
+    </div>
+</div>
+
