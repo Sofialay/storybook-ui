@@ -1,3 +1,7 @@
+@import './bgColors.css';
+@import './brandColors.css';
+@import './fontsColor.css';
+
 :root {
     --color-base-black: #000;
     --color-base-white: #fff;
@@ -314,26 +318,6 @@
     --z-index-40: 40;
     --z-index-50: 50;
     --z-index-auto: auto;
-  
-    --color-primary: #7900FF;
-    /* --color-primary-muted: ;
-    --color-primary-highlight: ;
-    --color-primary-inverted:  */
-    --color-font-base: #455970;
-    --color-font-muted: #7e858c;
-    --color-font-highlight: #b7b7b7;
-    --color-font-inverted: #fff;
-    --color-secondary: #548CFF;
-    /* --color-secondary-muted: ;
-    --color-secondary-highlight: ;
-    --color-secondary-inverted: ;*/
-    --color-tertiary: #93FFD8;
-    /* --color-tertiary-muted: ; */
-    --color-tertiary-highlight: #a7f3d0;
-    --color-tertiary-inverted: #fff;
-  
-    --background-color-primary: #f9f9f9;
-    --background-color-primary-highlight: #fcfdfd;
   
     --container-max-width: 800px;
   

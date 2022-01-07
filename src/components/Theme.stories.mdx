@@ -4,12 +4,7 @@
 <style>{`
     .title {
         font-size: 1.3rem;
-    }
-
-    .card-list {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+        text-decoration: underline;
     }
 
     .card-list .card {
@@ -24,29 +19,83 @@
         font-weight: bold;
     }
 
-    .card-list .card.primary {
+    .card-list .row-theme {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .card-list .row-theme div {
+        margin: 8px 0;
+    }
+
+    .card-list .row-theme .card.primary {
         background: #7900FF;
     }
-
-    .card-list .card.secondary {
+    .card-list .row-theme .card.primary-muted {
+        background: #5500b4;
+    }
+    .card-list .row-theme .card.primary-high {
+        background: #861AFF;
+    }
+    .card-list .row-theme .card.secondary {
         background: #548CFF;
     }
-
-    .card-list .card.tertiary {
+    .card-list .row-theme .card.secondary-s-muted {
+        background: #1E65FE;
+    }
+    .card-list .row-theme .card.secondary-s-high {
+        background: #7fA9FF;
+    }
+    .card-list .row-theme .card.tertiary {
         background: #93FFD8;
+    }
+    .card-list .row-theme .card.tertiary-t-muted {
+        background: #50FFBF;
+    }
+    .card-list .row-theme .card.tertiary-t-high {
+        background: #50FFBF;
     }
 `}
 </style>
+
 <div className="card-list">
     <div className='title'>Colors</div>
-    <div className='card primary'>
-        #7900FF
-    </div>
-    <div className='card secondary'>
-        #548CFF
-    </div>
-    <div className='card tertiary'>
-        #93FFD8
+    <div className='row-theme'>
+        <div>
+            <div className='card primary'>
+                #7900FF
+            </div>
+            <div className='card primary-muted'>
+                #5500BA
+            </div>
+            <div className='card primary-high'>
+                #861AFF
+            </div>
+        </div>
+        <div>
+            <div className='card secondary'>
+                #548CFF
+            </div>
+            <div className='card secondary-s-muted'>
+                #1E65FE
+            </div>
+            <div className='card secondary-s-high'>
+                #7FA9FF
+            </div>
+        </div>
+        <div>
+            <div className='card tertiary'>
+                #93FFD8
+            </div>
+            <div className='card tertiary-t-muted'>
+                #50FFBF
+            </div>
+            <div className='card tertiary-t-high'>
+                #A7F3D0
+            </div>
+        </div>
     </div>
 </div>
 
