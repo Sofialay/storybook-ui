@@ -7,29 +7,25 @@ export default {
     component: Button,
 }
 
-const Template = (args) => <Button {...args}/>
+const Template = (args) => <Button { ...args }/>
 
 export const Primary = Template.bind({})
 Primary.args = {
     type: 'primary',
-    children: 'Button'
 }
 
 export const Outline = Template.bind({})
 Outline.args = {
     type: 'outline',
-    children: 'Button'
 }
 
 export const Text = Template.bind({})
 Text.args = {
     type: 'text',
-    children: 'Button',
     isInline: true,
 }
 
 export const Disabled = Template.bind({})
 Disabled.args = {
     type: 'disabled',
-    children: 'Button'
 }
