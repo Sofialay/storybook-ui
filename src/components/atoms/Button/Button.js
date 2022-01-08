@@ -3,14 +3,14 @@ import { StButton } from './Button.styles'
 
 export const Button = ({
     children,
-    color = 'primary',
-    size = 'medium',
+    type = 'primary',
+    isInline = false,
     action,
 }) => (
     <StButton 
-        size={size}
-        bgColor={color}
+        type={type}
         onClick={action}
+        inline={isInline}
     >
         { children }
     </StButton>
