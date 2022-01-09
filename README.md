@@ -7,6 +7,7 @@ I'm currently learning about how CSS works in the course [CSS for Javascript Dev
 Some of the things and tricks would be here in this project, I hope you found some of the code usefull!
 
 #### For this proyect I'm currently using:
+- [React](https://es.reactjs.org/)
 - [Typescript](https://www.typescriptlang.org/)
 - [Styled-components](https://styled-components.com/)
 - [Component driven methodology](https://www.componentdriven.org/)
