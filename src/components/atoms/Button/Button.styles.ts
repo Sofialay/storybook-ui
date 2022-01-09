@@ -1,7 +1,11 @@
 import styled, { css } from 'styled-components'
 import '../../styles/theme.css'
+interface ButtonProps {
+    inline: boolean
+    type: 'primary' | 'outline' | 'text' | 'disabled'
+}
 
-export const StButton = styled.button`
+export const StButton = styled('button')<ButtonProps>`
     border: var(--color-base-transparent);
     color: var(--color-primary);
     width: 100%;
