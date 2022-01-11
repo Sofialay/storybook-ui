@@ -39,4 +39,10 @@ export const StButton = styled('button')<ButtonProps>`
     font-weight: var(--font-weight-semibold);
     letter-spacing: var(--letter-spacing-wide);
     cursor: pointer;
+    transition: background 0.2 ease;
+    &:hover {
+        ${({ type }) => type === 'primary' && css`
+            background: var(--color-primary-highlight);
+        `}
+    }
 `
